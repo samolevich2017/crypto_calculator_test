@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/slack-imgs.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Crypto Price Calculator</title>
+</head>
+<body>
+   <div class="container">
+       <img src="./img/slack-imgs.png" width="100" />
+       <form action="">
+            <div class="fields">
+                <div class="field_amount fieldsInp" >
+                    <span style="color: yellow;">₿</span>
+                    <input id="amount_token" type="number" name="amount" placeholder="Количество криптоактива" min="0" required step="any"/>
+                </div>
+                <div class="field_Password fieldsInp">
+                    <span style="color: rgb(94, 238, 94);">&#36;</span>
+                    <input id="price_token" type="number" name="price" placeholder="Цена криптоактива" min="0" required step="any"/>
+                </div>
+            </div>  
+       </form>
+       <div class="info_block">
+            <h1 style="color: rgb(94, 238, 94);">&#36; <span id="sumUSD">0.00</span></h1>
+            <h4>(сумма криптоактива в USD)</h4>
+       </div>
+       <!-- <div id="additional_info" class="additional_block">
+           <h5>Ориентировочная прибыль: <span style="color: rgb(94, 238, 94);">+&#36;1.72</span></h5>
+       </div> -->
+   </div>
+   <script src="./js/script.js"></script>
+</body>
+</html>

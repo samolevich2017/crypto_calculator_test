@@ -1,0 +1,106 @@
+/* Общие стили для всего приложения */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Tahoma;
+}
+
+body{
+    background: #131A35;  /* fallback for old browsers */
+}
+
+.container{
+    position: relative;
+    top: 100px;
+    height: 430px;
+    max-width: 450px;
+    margin: 0 auto;
+    border: solid #4eb2c8 2px;
+    border-radius: 25px;
+    padding: 30px 5px;
+}
+
+h1, h4{
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h5{
+    color: #FFF;
+}
+
+img{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+}
+
+.fieldsInp{
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+form input[type="number"]:focus,
+form input[type="number"]:hover{
+    
+    box-shadow: #4eb2c8 0 0 10px;
+}
+
+form{
+    margin-top: 10%;
+}
+
+form input[type="number"]{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding: 5px 0 5px 45px;
+    outline: none;
+    font-size: 14px;
+    border: none;
+    border-radius: 60px;
+    background-color: #172D46;
+    color: #FFF;
+    font-weight: bold;
+    z-index: 4;
+    padding-right: 15px;
+    border: #4eb2c8 solid 2px;
+}
+
+.fieldsInp span{
+    position: absolute;
+    display: flex;
+    z-index: 5;
+    left: 15px;
+    line-height: 40px;
+}
+
+.fields{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info_block{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.additional_block{
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+@media only screen and (max-width: 450px) {
+    .container{
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+}
